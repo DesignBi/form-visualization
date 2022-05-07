@@ -1,0 +1,90 @@
+.form-model{
+  display: flex;
+}
+.form-model, .form-config, .form-content{
+  height: calc(100vh - 70px);
+  overflow-y: auto;
+}
+.form-left{
+  width: 270px;
+  background: #fff;
+  padding: 15px 15px 0 15px;
+  border: 1px solid #eeeeee;
+  .ant-btn{
+    width: 110px;
+    text-align: left;
+    margin-bottom: 15px;
+  }
+  .ant-btn:nth-child(2n) {
+    margin-left: 15px;
+  }
+}
+.form-content{
+  position: relative;
+  flex:1;
+  background: #fff;
+  border: 1px solid #eeeeee;
+  margin: 0 20px;
+  padding: 20px;
+}
+.form-config{
+  position: relative;
+  width: 600px;
+  background: #fff;
+  border: 1px solid #eeeeee;
+  padding: 20px;
+}
+.footer_warp{
+  position: absolute;
+  bottom: 10px;
+  right: 0;
+  left: 0;
+  padding: 10px 0;
+  margin: 0;
+  background: #fff;
+  border-top: 1px solid #eeeeee;
+  z-index: 999;
+}
+.tabs-warp{
+  display: flex;
+  align-items: center;
+}
+.tabs-warp:hover{
+  border: 1px solid #1890ff;
+}
+.selected{
+  border: 1px solid #1890ff;
+  box-sizing: border-box;
+}
+.form-item{
+  flex: 1;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+.form-title{
+  cursor: pointer;
+}
+.form-title:hover, .form-item:hover{
+  border: 1px solid #1890ff;
+}
+.form-item-actions{
+  display: flex;
+  //justify-content: space-between;
+  width: 80px;
+  font-size: 20px;
+}
+.remove-form-item{
+  color: red;
+  margin: 0 5px;
+}
+.site-tag-plus {
+  background: #fff;
+  border-style: dashed;
+}
+.form-step-actions{
+  display: flex;
+  margin-bottom: 20px;
+  .title{
+    width: 90px;
+  }
+}
